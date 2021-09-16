@@ -3,6 +3,8 @@
 - Portfolio project made with HTML and CSS
 - Part of HTML & CSS course @ Business College Helsinki (Full Stack Web Developer Program)
 
+- I added some cool changes when in the new_feature branch
+
 ## Tasks and features to be added
 
 ### 2.9.
