@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			defer
+			src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"
+		></script>
+		<script
+			defer
+			src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"
+		></script>
+		<script
+			defer
+			src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"
+		></script>
+		<title>Remu Ollinen</title>
+		<link
+			rel="shortcut icon"
+			href="./images/favicon_blue.svg"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<img
+					class="logo"
+					src="./images/logo_for_dark_bg.svg"
+					alt="Remu Ollinen logo"
+				/>
+				<ul class="link-wrapper">
+					<li><a class="link" href="#projects">Projects</a></li>
+					<li><a class="link" href="#about">About me</a></li>
+					<li><a class="link" href="#skills">Skills</a></li>
+					<li>
+						<a class="link" href="https://en.bc.fi" target="_blank"
+							>More about HBC</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<div class="banner">
+				<h3 class="banner-text">
+					The
+					<img
+						id="banner-favicon"
+						src="./images/favicon_blue.svg"
+						alt="Remu Ollinen favicon"
+					/>
+					to unlocking your digital potential.
+				</h3>
+			</div>
+		</header>
+		<main>
+			<section id="projects">
+				<h2>Projects</h2>
+				<div class="cards-wrapper">
+					<div class="card desktop">
+						<img src="./images/desktop.jpg" alt="desktop device" />
+						<h3>Desktop</h3>
+						<p>Desktop projects</p>
+						<a href="#">Read more</a>
+					</div>
+					<div class="card tablet">
+						<img src="./images/tablet.jpg" alt="tablet device" />
+						<h3>Tablet</h3>
+						<p>Tablet projects</p>
+						<a href="#">Read more</a>
+					</div>
+					<div class="card mobile">
+						<img src="./images/mobile.jpg" alt="Mobile image" />
+						<h3>Mobile</h3>
+						<p>Mobile projects</p>
+						<a href="#">Read more</a>
+					</div>
+				</div>
+			</section>
+			<section id="about">
+				<h2>About me</h2>
+				<div class="section-content about-wrapper">
+					<div class="image-wrapper about-img">
+						<img
+							src="/portfolio/images/profile_picture.jpg"
+							alt="profile picture of Remu Ollinen"
+						/>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+						consectetur dignissimos mollitia eveniet possimus enim hic
+						perferendis autem deleniti ex at sed minima alias eligendi,
+						aspernatur tempore laborum aperiam commodi tenetur voluptatem illo
+						nemo qui ut quod? Deleniti odio perferendis eos beatae labore
+						numquam perspiciatis, nostrum totam dicta cum, quis magni voluptatum
+						sequi illum? Sapiente dolores accusantium fuga ratione id
+						cupiditate! Fugit optio minima, soluta obcaecati voluptate officia.
+						Sunt doloribus rerum officiis, ea ullam maxime mollitia labore
+						dignissimos a aliquam!
+					</p>
+				</div>
+			</section>
+			<section id="skills">
+				<h2>Skills</h2>
+				<div class="section-content skills-wrapper">
+					<!-- <div class="image-wrapper skills-img">
+                        <img src="/portfolio/images/skills.jpg" alt="skills displayed in code editor">
+                    </div> -->
+					<div class="skills-cards">
+						<div class="skill-card">
+							<i class="fab fa-html5"></i>
+							<p>HTML5</p>
+							<div class="progress-bar-wrapper">
+								<div id="html-bar" class="progress-bar"></div>
+							</div>
+						</div>
+						<div class="skill-card">
+							<i class="fab fa-css3-alt"></i>
+							<p>CSS3</p>
+							<div class="progress-bar-wrapper">
+								<div id="css-bar" class="progress-bar"></div>
+							</div>
+						</div>
+						<div class="skill-card">
+							<i class="fab fa-js"></i>
+							<p>JavaScript</p>
+							<div class="progress-bar-wrapper">
+								<div id="js-bar" class="progress-bar"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<h4>Contact me</h4>
+			<form>
+				<div class="labels">
+					<label for="name">Name</label>
+					<label for="email">Email</label>
+					<label for="message">Your message</label>
+				</div>
+				<div class="inputs">
+					<input type="text" id="name" />
+					<input type="email" id="email" />
+					<textarea name="message" id="message" cols="30" rows="6"></textarea>
+					<input type="button" id="submit" value="Say hello" />
+				</div>
+			</form>
+			<div class="socials">
+				<a
+					href="https://github.com/remuollinen"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<i class="fab fa-github"></i>
+				</a>
+				<a
+					href="https://linkedin.com/in/remu-ollinen"
+					class="fab fa-linkedin-in"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+			</div>
+			<p>Copyright &copy; Remu Ollinen 2021</p>
+		</footer>
+	</body>
+</html>
