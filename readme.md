@@ -1,6 +1,11 @@
-# Tasks
+# Info
 
-# 2.9.
+- Portfolio project made with HTML and CSS
+- Part of HTML & CSS course @ Business College Helsinki (Full Stack Web Developer Program)
+
+## Tasks and features to be added
+
+### 2.9.
 
 - include icons to your portfolio and style guide!
   - about me icon
@@ -11,7 +16,7 @@
   - portfolio / done projects
   - social icons
 
-# 9.9.
+### 9.9.
 
 - skills text with icons and progress bars
 - header to fixed, on scroll
