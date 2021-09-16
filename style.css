@@ -163,11 +163,11 @@ section {
 .card h3 {
 	font-size: 1.8rem;
 	color: #eff7fb;
-	margin: 1rem 0;
+	margin: 0.5rem 0;
 }
 
 .card p {
-	padding: 1rem 0 2rem 0;
+	padding: 0.5rem 0 2rem 0;
 }
 
 .card a {
