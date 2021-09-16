@@ -2,6 +2,8 @@
 
 - Portfolio project made with HTML and CSS
 - Part of HTML & CSS course @ Business College Helsinki (Full Stack Web Developer Program)
+- Icons from Font Awesome library
+- Logos and favicons made with Figma
 
 - I added some cool changes when in the new_feature branch
 
