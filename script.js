@@ -10,15 +10,15 @@ window.onscroll = function () {
 		navbar.style.backgroundColor = "#0F1B2E";
 		logo.setAttribute("src", "./assets/vectors/logo_light.svg");
 		links.forEach((link) => {
-			link.style.color = "#EFF7FB";
-			link.style.border = "2px solid #EFF7FB";
+			// link.style.color = "#EFF7FB";
+			link.classList.add("active");
 		});
 	} else if (window.scrollY < 672) {
 		navbar.style.backgroundColor = "transparent";
 		logo.setAttribute("src", "./assets/vectors/logo_dark.svg");
 		links.forEach((link) => {
-			link.style.color = "#0F1B2E";
-			link.style.border = "2px solid #0F1B2E";
+			// link.style.color = "#0F1B2E";
+			link.classList.remove("active");
 		});
 	}
 };
