@@ -4,6 +4,9 @@
 - Part of HTML & CSS course @ Business College Helsinki (Full Stack Web Developer Program)
 - Icons from Font Awesome library
 - Logos and favicons made with Figma
+- Used a Trello board for keeping track of tasks
+
+  - also users, actions, features, benefits and vision
 
 - I added some cool changes when in the new_feature branch
 

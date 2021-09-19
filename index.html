@@ -15,10 +15,10 @@
 			href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
-		<script src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
-		<script src="/node_modules/@fortawesome/fontawesome-free/js/regular.js"></script>
-		<script src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+		<script
+			defer
+			src="/node_modules/@fortawesome/fontawesome-free/js/all.js"
+		></script>
 		<title>Remu Ollinen</title>
 		<link
 			rel="shortcut icon"
@@ -31,7 +31,7 @@
 			<nav>
 				<img
 					class="logo"
-					src="./assets/vectors/logo_for_dark_bg.svg"
+					src="./assets/vectors/logo_dark.svg"
 					alt="Remu Ollinen logo"
 				/>
 				<ul class="link-wrapper">
@@ -39,7 +39,11 @@
 					<li><a class="link" href="#about">About me</a></li>
 					<li><a class="link" href="#skills">Skills</a></li>
 					<li>
-						<a class="link" href="https://en.bc.fi" target="_blank"
+						<a
+							class="link"
+							href="https://en.bc.fi"
+							target="_blank"
+							rel="noreferrer"
 							>More about HBC</a
 						>
 					</li>
@@ -92,7 +96,11 @@
 						are visually appealing and challenge me to become a better
 						developer. <br /><br />
 						Now I'm on the road to becoming a full stack web developer @
-						<a href="https://en.bc.fi" target="_blank"
+						<a
+							id="about-school-link"
+							href="https://en.bc.fi"
+							target="_blank"
+							rel="noreferrer"
 							>Business College Helsinki</a
 						>. <br /><br />
 						Apart from coding, I enjoy running, Premier League (especially
@@ -105,24 +113,38 @@
 				<div class="section-content skills-wrapper">
 					<div class="skills-cards">
 						<div class="skill-card">
-							<i class="fab fa-html5"></i>
-							<p>HTML5</p>
+							<i id="html-icon" class="fab fa-html5"></i>
+							<h3>HTML5</h3>
 							<div class="progress-bar-wrapper">
 								<div id="html-bar" class="progress-bar"></div>
 							</div>
 						</div>
 						<div class="skill-card">
-							<i class="fab fa-css3-alt"></i>
-							<p>CSS3</p>
+							<i id="css-icon" class="fab fa-css3-alt"></i>
+							<h3>CSS3</h3>
 							<div class="progress-bar-wrapper">
 								<div id="css-bar" class="progress-bar"></div>
 							</div>
 						</div>
 						<div class="skill-card">
-							<i class="fab fa-js"></i>
-							<p>JavaScript</p>
+							<i id="js-icon" class="fab fa-js"></i>
+							<h3>JavaScript</h3>
 							<div class="progress-bar-wrapper">
 								<div id="js-bar" class="progress-bar"></div>
+							</div>
+						</div>
+						<div class="skill-card">
+							<i id="react-icon" class="fab fa-react"></i>
+							<h3>React</h3>
+							<div class="progress-bar-wrapper">
+								<div id="react-bar" class="progress-bar"></div>
+							</div>
+						</div>
+						<div class="skill-card">
+							<i id="figma-icon" class="fab fa-figma"></i>
+							<h3>Figma</h3>
+							<div class="progress-bar-wrapper">
+								<div id="figma-bar" class="progress-bar"></div>
 							</div>
 						</div>
 					</div>
@@ -130,7 +152,7 @@
 			</section>
 		</main>
 		<footer>
-			<h4>Contact me</h4>
+			<h2>Contact me</h2>
 			<form>
 				<div class="labels">
 					<label for="name">Name</label>
@@ -165,5 +187,6 @@
 			</div>
 			<p>Copyright &copy; Remu Ollinen 2021</p>
 		</footer>
+		<script src="script.js"></script>
 	</body>
 </html>
