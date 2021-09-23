@@ -309,7 +309,7 @@ img {
 footer {
 	height: auto;
 	width: 100%;
-	padding: 2rem;
+	padding-bottom: 1.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -408,6 +408,71 @@ a {
 .socials .svg-inline--fa:hover {
 	border: 2px solid #3e92ccff;
 	color: #3e92ccff;
+}
+
+/* ******************* */
+/* Gallery page styles */
+/* ******************* */
+
+#gallery {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0 5% 0;
+}
+
+.grid-container {
+	background-color: #eff7fb;
+	width: 75vw;
+	padding: 0.5rem;
+	display: grid;
+	grid-template: repeat(6, 10rem) / repeat(5, 1fr);
+	grid-gap: 0.5rem;
+}
+
+.grid-container img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.bridge {
+	grid-row: span 2;
+	grid-column: span 2;
+}
+.building {
+	grid-row: span 3;
+}
+.court {
+	grid-row: span 1;
+	grid-column: span 2;
+}
+.jellyfish {
+	grid-row: span 2;
+	grid-column: span 1;
+}
+.mountain {
+	grid-row: span 2;
+	grid-column: span 2;
+	order: 9;
+}
+.nemo {
+	grid-column: span 3;
+	order: -1;
+}
+.plane {
+	grid-row: span 1;
+	grid-column: span 2;
+}
+.seagulls {
+	grid-row: span 3;
+	grid-column: span 2;
+}
+.sign {
+	grid-row: span 3;
 }
 
 /* ************* */
