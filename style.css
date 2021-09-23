@@ -74,8 +74,8 @@ nav {
 	font-weight: 700;
 	font-size: 1.2rem;
 	color: #0f1b2e;
-	margin: 0.5rem 1rem;
-	padding: 0.5rem 1rem;
+	margin: 0.5rem;
+	padding: 0.5rem;
 	transition: 0.3s all ease-in-out;
 }
 
@@ -107,15 +107,6 @@ nav {
 	animation: rotate-icon 2.5s linear infinite;
 }
 
-/* @keyframes rotate-icon {
-	0% {
-		transform: rotateY(0deg);
-	}
-	100% {
-		transform: rotateY(360deg);
-	}
-} */
-
 h2,
 p {
 	color: #eff7fb;
@@ -139,6 +130,10 @@ section {
 	padding-top: 15vh;
 	margin-top: -13vh;
 }
+
+/* ******** */
+/* PROJECTS */
+/* ******** */
 
 .cards-wrapper {
 	display: flex;
@@ -185,6 +180,10 @@ section {
 	background-color: #3e92ccff;
 	color: #eff7fb;
 }
+
+/* ***** */
+/* ABOUT */
+/* ***** */
 
 #about,
 #skills {
@@ -425,7 +424,7 @@ a {
 
 .grid-container {
 	background-color: #eff7fb;
-	width: 75vw;
+	width: 80vw;
 	padding: 0.5rem;
 	display: grid;
 	grid-template: repeat(6, 10rem) / repeat(5, 1fr);
@@ -480,6 +479,7 @@ a {
 /* ************* */
 
 /* iPad */
+
 @media (max-width: 768px) {
 	.logo {
 		height: 3rem;
@@ -543,15 +543,22 @@ a {
 
 	.skill-card {
 		height: 25vh;
-		width: 35%;
-		margin: 0 1.5rem;
+		width: 32%;
+		margin: 1.5rem;
 	}
 
-	.fa-html5,
-	.fa-css3-alt,
-	.fa-js {
-		height: 20%;
-		font-size: 3rem;
+	.skill-card:nth-child(n + 3) {
+		background: #3e92ccff;
+	}
+
+	.skill-card:nth-child(5) {
+		background: unset;
+	}
+
+	.skill-card .svg-inline--fa {
+		height: 4rem;
+		width: 4rem;
+		font-size: 4rem;
 	}
 
 	#submit {
@@ -560,6 +567,7 @@ a {
 }
 
 /* iPhone 5/SE */
+
 @media (max-width: 320px) {
 	nav {
 		flex-direction: column;
@@ -645,11 +653,12 @@ a {
 		margin: 2rem 0;
 	}
 
-	.fa-html5,
-	.fa-css3-alt,
-	.fa-js {
-		height: 40%;
-		font-size: 5rem;
+	.skill-card:nth-child(even) {
+		background: #3e92ccff;
+	}
+
+	.skill-card:nth-child(3) {
+		background: unset;
 	}
 
 	.skill-card p {
@@ -688,5 +697,22 @@ a {
 		font-size: 0.6rem;
 		width: 80%;
 		padding: 0.5rem;
+	}
+
+	.grid-container {
+		grid-template: 1fr / 1fr;
+	}
+
+	.bridge,
+	.building,
+	.court,
+	.jellyfish,
+	.mountain,
+	.nemo,
+	.plane,
+	.seagulls,
+	.sign {
+		grid-row: unset;
+		grid-column: unset;
 	}
 }
