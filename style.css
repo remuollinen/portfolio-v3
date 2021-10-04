@@ -1,10 +1,9 @@
-/* COLOR PALETTE IDEA
---green-blue-crayola: #3e92ccff;
---prussian-blue: #13293dff;
---prussian-blue-2: #16324fff;
---alice-blue: #eff7fb;
---oxford-blue: #0F1B2E;
-*/
+:root {
+	--primary: #16324fff;
+	--dark: #0f1b2e;
+	--light: #eff7fb;
+	--accent: #3e92ccff;
+}
 
 * {
 	margin: 0;
@@ -17,7 +16,7 @@ body {
 	font-family: "Raleway", sans-serif;
 	display: flex;
 	flex-direction: column;
-	background-color: #16324fff;
+	background-color: var(--primary);
 }
 
 h2,
@@ -37,7 +36,7 @@ header {
 
 header::before {
 	content: "";
-	background-color: #eff7fb;
+	background-color: var(--light);
 	position: absolute;
 	height: 100vh;
 	width: 100%;
@@ -73,18 +72,18 @@ nav {
 	text-decoration: none;
 	font-weight: 700;
 	font-size: 1.2rem;
-	color: #0f1b2e;
+	color: var(--dark);
 	margin: 0.5rem;
 	padding: 0.5rem;
 	transition: 0.3s all ease-in-out;
 }
 
 .active {
-	color: #eff7fb;
+	color: var(--light);
 }
 
 .link:hover {
-	color: #3e92ccff;
+	color: var(--accent);
 }
 
 .banner {
@@ -95,7 +94,7 @@ nav {
 }
 
 .banner-text {
-	color: #13293dff;
+	color: var(--dark);
 	font-size: 2.5rem;
 	z-index: 2;
 	transform: translateY(15vh);
@@ -104,12 +103,11 @@ nav {
 #banner-favicon {
 	height: 4rem;
 	margin: -1rem 0.5rem;
-	animation: rotate-icon 2.5s linear infinite;
 }
 
 h2,
 p {
-	color: #eff7fb;
+	color: var(--light);
 }
 
 h2 {
@@ -141,10 +139,10 @@ section {
 }
 
 .card {
-	height: 50vh;
+	min-height: 100%;
 	width: 25%;
 	text-align: center;
-	border: 2px solid #eff7fb;
+	border: 2px solid var(--light);
 	border-radius: 0.5rem;
 }
 
@@ -153,12 +151,12 @@ section {
 	width: 100%;
 	border-top-left-radius: 0.5rem;
 	border-top-right-radius: 0.5rem;
-	box-shadow: 0 0 0 0.1rem #eff7fb;
+	box-shadow: 0 0 0 0.1rem var(--light);
 }
 
 .card h3 {
 	font-size: 1.8rem;
-	color: #eff7fb;
+	color: var(--light);
 	margin: 0.5rem 0;
 }
 
@@ -167,18 +165,18 @@ section {
 }
 
 .card a {
-	padding: 0.5rem;
-	color: #13293dff;
-	background-color: #eff7fb;
+	padding: 1rem;
+	color: var(--dark);
+	background-color: var(--light);
 	text-decoration: none;
-	border: 2px solid #eff7fb;
+	border: 2px solid var(--light);
 	border-radius: 0.5rem;
 	transition: all 0.2s ease-in-out;
 }
 
 .card a:hover {
-	background-color: #3e92ccff;
-	color: #eff7fb;
+	background-color: var(--accent);
+	color: var(--light);
 }
 
 /* ***** */
@@ -208,7 +206,7 @@ section {
 .image-wrapper {
 	height: 250px;
 	width: 250px;
-	border: 2px solid #eff7fb;
+	border: 2px solid var(--light);
 	border-radius: 50%;
 	background: url(./assets/images/profile_picture.jpg) no-repeat center top /
 		cover;
@@ -217,7 +215,7 @@ section {
 
 .image-wrapper:hover {
 	transform: scale(2);
-	box-shadow: 0 0 50px #0f1b2e;
+	box-shadow: 0 0 50px var(--dark);
 }
 
 .about-wrapper p {
@@ -225,12 +223,12 @@ section {
 }
 
 #about-school-link {
-	color: #eff7fb;
+	color: var(--light);
 	transition: 0.2s ease-in-out;
 	text-decoration: underline;
 }
 #about-school-link:hover {
-	color: #3e92ccff;
+	color: var(--accent);
 }
 
 /* ****** */
@@ -249,7 +247,7 @@ section {
 	height: 50vh;
 	width: 25%;
 	margin: 1.5rem;
-	border: 2px solid #eff7fb;
+	border: 2px solid var(--light);
 	border-radius: 0.5rem;
 	display: flex;
 	flex-direction: column;
@@ -260,11 +258,11 @@ section {
 }
 
 .skill-card:nth-child(n + 4) {
-	background: #3e92ccff;
+	background: var(--accent);
 }
 
 .skill-card .svg-inline--fa {
-	color: #eff7fb;
+	color: var(--light);
 	height: 6rem;
 	width: 6rem;
 	font-size: 6rem;
@@ -280,13 +278,13 @@ section {
 	padding: 0.3rem;
 	height: 2rem;
 	width: 80%;
-	background-color: #eff7fb;
+	background-color: var(--light);
 }
 
 .progress-bar {
 	height: 1.5rem;
 	width: 80%;
-	background-color: #3e92ccff;
+	background-color: var(--accent);
 }
 
 #js-bar {
@@ -313,8 +311,8 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #0f1b2e;
-	box-shadow: 2px 2px 10px #0f1b2e;
+	background-color: var(--dark);
+	box-shadow: 2px 2px 10px var(--dark);
 }
 
 footer p {
@@ -324,7 +322,7 @@ footer p {
 h3 {
 	margin: 2rem auto;
 	font-size: 2rem;
-	color: #eff7fb;
+	color: var(--light);
 }
 
 form {
@@ -332,7 +330,7 @@ form {
 }
 
 label {
-	color: #eff7fb;
+	color: var(--light);
 }
 
 .labels {
@@ -359,6 +357,7 @@ textarea {
 	padding: 0.5rem;
 	border-radius: 0.5rem;
 	width: 100%;
+	background-color: var(--light);
 }
 
 textarea {
@@ -372,15 +371,15 @@ textarea {
 	font-size: 1.2rem;
 	font-weight: 700;
 	width: 60%;
-	background-color: #3e92ccff;
+	background-color: var(--accent);
 	cursor: pointer;
-	color: #eff7fb;
-	border: 2px solid #eff7fb;
+	color: var(--light);
+	border: 2px solid var(--light);
 	transition: all 0.2s ease-in-out;
 }
 
 #submit:hover {
-	background-color: #0f1b2e;
+	background-color: var(--dark);
 }
 
 a {
@@ -396,17 +395,17 @@ a {
 	font-size: 1.5rem;
 	height: 3rem;
 	width: 3rem;
-	color: #eff7fb;
+	color: var(--light);
 	padding: 0.7rem;
 	margin: 1rem;
-	border: 2px solid #eff7fb;
+	border: 2px solid var(--light);
 	border-radius: 50%;
 	transition: all 0.2s ease-in-out;
 }
 
 .socials .svg-inline--fa:hover {
-	border: 2px solid #3e92ccff;
-	color: #3e92ccff;
+	border: 2px solid var(--accent);
+	color: var(--accent);
 }
 
 /* ******************* */
@@ -423,7 +422,7 @@ a {
 }
 
 .grid-container {
-	background-color: #eff7fb;
+	background-color: var(--light);
 	width: 80vw;
 	padding: 0.5rem;
 	display: grid;
@@ -548,7 +547,7 @@ a {
 	}
 
 	.skill-card:nth-child(n + 3) {
-		background: #3e92ccff;
+		background: var(--accent);
 	}
 
 	.skill-card:nth-child(5) {
@@ -654,7 +653,7 @@ a {
 	}
 
 	.skill-card:nth-child(even) {
-		background: #3e92ccff;
+		background: var(--accent);
 	}
 
 	.skill-card:nth-child(3) {
