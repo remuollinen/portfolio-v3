@@ -103,6 +103,16 @@ nav {
 #banner-favicon {
 	height: 4rem;
 	margin: -1rem 0.5rem;
+	animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+	from {
+		transform: rotateY(0deg);
+	}
+	to {
+		transform: rotateY(360deg);
+	}
 }
 
 h2,
