@@ -90,6 +90,7 @@ nav {
 	text-decoration: none;
 	color: var(--dark);
 	font-size: 1.8rem;
+	display: none;
 }
 
 .banner {
@@ -150,6 +151,7 @@ section {
 	text-align: center;
 	border: 2px solid var(--light);
 	border-radius: 0.5rem;
+	box-shadow: 0 0 2rem var(--dark);
 }
 
 .card img {
@@ -261,6 +263,7 @@ section {
 	justify-content: space-evenly;
 	text-align: center;
 	transition: all 0.2s ease-in-out;
+	box-shadow: 0 0 2rem var(--dark);
 }
 
 .skill-card:nth-child(n + 4) {
@@ -575,26 +578,40 @@ a {
 
 @media (max-width: 320px) {
 	nav {
-		flex-direction: column;
-		height: 35vh;
+		flex-wrap: wrap;
+		height: 15vh;
 	}
 
-	.logo {
-		margin: 1rem 0 0.5rem 0;
+	.logo,
+	.menu-icon {
+		margin: 1rem;
+	}
+
+	.menu-icon {
+		display: unset;
 	}
 
 	.link-wrapper {
-		flex-wrap: wrap;
-		justify-content: center;
+		flex-direction: column;
+		justify-content: space-around;
 		align-items: center;
-		height: 100%;
-		margin: 0 0.2rem;
+		height: 90vh;
+		width: 100vw;
+		margin: 0;
+		padding-bottom: 10vh;
+		transform: translateY(-150%);
+		transition: 0.5s ease-in-out;
+		background-color: var(--dark);
+	}
+
+	.link-wrapper.show {
+		transform: translateY(0);
 	}
 
 	.link {
-		/* margin: 1rem; */
 		padding: 0.5rem;
 		font-size: 0.8rem;
+		color: var(--light);
 	}
 
 	.banner {
@@ -615,8 +632,8 @@ a {
 
 	section {
 		min-height: 75vh;
-		padding-top: 35vh;
-		margin-top: -32vh;
+		/* padding-top: 35vh;
+		margin-top: -32vh; */
 	}
 
 	.cards-wrapper {
