@@ -91,6 +91,7 @@ nav {
 	color: var(--dark);
 	font-size: 1.8rem;
 	display: none;
+	cursor: pointer;
 }
 
 .banner {
@@ -425,6 +426,30 @@ a {
 .socials .svg-inline--fa:hover {
 	border: 2px solid var(--accent);
 	color: var(--accent);
+}
+
+/* ****************** */
+/* Back-to-Top Button */
+/* ****************** */
+
+#back-to-top {
+	position: fixed;
+	z-index: 100;
+	bottom: 1rem;
+	right: 1rem;
+	height: 2rem;
+	width: 2rem;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0 0 0.5rem var(--dark);
+	background-color: var(--light);
+	cursor: pointer;
+	font-size: 1.5rem;
+	transition: 0.5s ease-in-out;
+}
+
+.fa-chevron-up {
+	color: var(--dark);
 }
 
 /* ******************* */

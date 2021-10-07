@@ -6,6 +6,10 @@ const logo = document.querySelector(".logo");
 const links = document.querySelectorAll(".link");
 const linkWrapper = document.querySelector(".link-wrapper");
 const menuIcon = document.querySelector(".menu-icon");
+const backToTopBtn = document.getElementById("back-to-top");
+const scrollTarget = document.querySelector("footer");
+
+// Changes navbar, logo and menu buttons color depending on scroll position
 
 if (window.innerWidth > 320) {
 	window.onscroll = function () {
@@ -43,20 +47,47 @@ if (window.innerWidth > 320) {
 	};
 }
 
+// Function to show and hide back-to-top button, this shows it when intersecting with 'footer' element
+
+function scrollCallback(entries) {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			backToTopBtn.style.opacity = 1;
+		} else {
+			backToTopBtn.style.opacity = 0;
+		}
+	});
+}
+let observer = new IntersectionObserver(scrollCallback);
+observer.observe(scrollTarget);
+
+// Event listeners
+
 menuIcon.addEventListener("click", toggleMenu);
+
 links.forEach((link) => link.addEventListener("click", toggleMenu));
+
+backToTopBtn.addEventListener("click", () => {
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
+});
+
+// Handler functions
+
+// Opens and closes mobile menu
 
 function toggleMenu() {
 	linkWrapper.classList.toggle("show");
 	if (linkWrapper.classList.contains("show")) {
 		setTimeout(darkNav, 270);
 	} else {
-		// transparentNav();
 		setTimeout(transparentNav, 270);
 	}
 }
 
-// These function change the styling of the navbar depending whether the mobile menu is open or not
+// These functions change the styling of the navbar depending whether the mobile menu is open or not
 
 function darkNav() {
 	navbar.style.backgroundColor = "var(--dark)";
