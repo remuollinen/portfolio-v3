@@ -86,6 +86,12 @@ nav {
 	color: var(--accent);
 }
 
+.menu-icon {
+	text-decoration: none;
+	color: var(--dark);
+	font-size: 1.8rem;
+}
+
 .banner {
 	display: flex;
 	justify-content: center;
