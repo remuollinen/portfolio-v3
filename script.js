@@ -1,7 +1,5 @@
 "use strict";
 
-import "./node_modules/@fortawesome/fontawesome-free/js/all.js";
-
 const navbar = document.querySelector("nav");
 const logo = document.querySelector(".logo");
 const links = document.querySelectorAll(".link");
