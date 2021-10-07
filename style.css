@@ -611,7 +611,7 @@ a {
 
 /* iPhone 5/SE */
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
 	nav {
 		flex-wrap: wrap;
 		height: 15vh;
