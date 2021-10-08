@@ -177,6 +177,11 @@ section {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+	transform: scale(1.05);
 }
 
 .card img {
@@ -291,6 +296,11 @@ section {
 	text-align: center;
 	transition: all 0.2s ease-in-out;
 	box-shadow: 0 0 2rem var(--dark);
+	transition: all 0.2s ease-in-out;
+}
+
+.skill-card:hover {
+	transform: scale(1.05);
 }
 
 .skill-card:nth-child(n + 4) {
