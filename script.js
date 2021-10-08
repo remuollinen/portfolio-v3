@@ -10,7 +10,7 @@ const scrollTarget = document.querySelector("footer");
 
 // Changes navbar, logo and menu buttons color depending on scroll position
 
-if (window.innerWidth > 320) {
+if (window.innerWidth > 450) {
 	window.onscroll = function () {
 		if (window.scrollY >= 600) {
 			navbar.style.backgroundColor = "var(--dark)";
@@ -26,7 +26,7 @@ if (window.innerWidth > 320) {
 			});
 		}
 	};
-} else if (window.innerWidth <= 320) {
+} else if (window.innerWidth <= 450) {
 	window.onscroll = function () {
 		if (window.scrollY >= 400) {
 			navbar.style.backgroundColor = "var(--dark)";
