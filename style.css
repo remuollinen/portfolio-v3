@@ -168,7 +168,7 @@ section {
 
 .card {
 	min-height: 50%;
-	width: 25%;
+	/* width: 30%; */
 	margin: 1rem;
 	text-align: center;
 	border: 0.2rem solid var(--light);
@@ -198,11 +198,11 @@ section {
 .card h3 {
 	font-size: 1.8rem;
 	color: var(--light);
-	margin: 1rem 0;
+	margin: 1.5rem 0;
 }
 
 .card p {
-	padding: 0.5rem 0 1rem 0;
+	padding: 0.5rem 0.5rem 1rem 0.5rem;
 }
 
 .card .project-links {
